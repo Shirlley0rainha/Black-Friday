@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Black Friday</title>
     <style>
-        /* Estilos básicos para o site */
         body {
             font-family: sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f0f0f0; /* Cor de fundo suave */
         }
         header {
             background-color: #000;
@@ -22,14 +22,32 @@
         }
         section {
             padding: 20px;
+            display: flex;
+            flex-wrap: wrap; /* Permite que os produtos se ajustem em várias linhas */
+            justify-content: center; /* Centraliza os produtos */
         }
         .produto {
             border: 1px solid #ccc;
-            margin-bottom: 20px;
+            margin: 10px; /* Espaçamento entre os produtos */
             padding: 20px;
+            width: 300px; /* Largura fixa para os produtos */
+            background-color: #fff; /* Fundo branco para os produtos */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
         }
         .produto img {
             max-width: 100%;
+            height: auto; /* Altura ajustada automaticamente */
+            margin-bottom: 10px;
+        }
+        .produto h3 {
+            margin-top: 0;
+        }
+        .produto button {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
         }
         footer {
             background-color: #000;
@@ -46,8 +64,6 @@
     </header>
 
     <section>
-        <h2>Produtos em destaque</h2>
-
         <div class="produto">
             <img src="produto1.jpg" alt="Produto 1">
             <h3>Produto 1</h3>
